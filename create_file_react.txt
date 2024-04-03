@@ -1,0 +1,11 @@
+tạo react native:
+npx create-expo-app@latest .(tên folder)
+run:
+npm run android 
+npm start
+cài thẻ:
+npm install @react-navigation/native-stack
+thư viện icon:
+npm install react-native-heroicons
+install tailwin :
+https://www.nativewind.dev/quick-starts/expo
