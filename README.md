@@ -1,2 +1,0 @@
-# multi-platform
-app mobie
