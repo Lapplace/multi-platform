@@ -9,3 +9,6 @@ thư viện icon:
 npm install react-native-heroicons
 install tailwin :
 https://www.nativewind.dev/quick-starts/expo
+
+expo install expo-linear-gradient
+npm install react-native-progress
