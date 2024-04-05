@@ -13,7 +13,7 @@ import { useNavigation } from "@react-navigation/native";
 import { ArrowLeftIcon } from "react-native-heroicons/outline";
 import { useForm, Controller } from "react-hook-form";
 
-export const LoginScreen = () => {
+export default function LoginScreen(){
   const navigation = useNavigation();
   const {
     control,

@@ -22,7 +22,9 @@ export default function HomeScreen() {
                <SafeAreaView className={android ? "-mb-2" : 'mb-3'}>
                     <StatusBar style="light" />
                     <View className='flex-row justify-between items-center mx-4'>
-                         <Bars3CenterLeftIcon size="30" strokeWidth={2} color="white" />
+                         <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                              <Bars3CenterLeftIcon size="30" strokeWidth={2} color="white" />
+                         </TouchableOpacity>
                          <Text className="text-white text-3xl font-bold">
                               <Text style={styles.text}>M</Text>ovie
                          </Text>
