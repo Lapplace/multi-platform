@@ -1,10 +1,11 @@
 import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
+import { fallbackPersonImage, image185 } from '../api/moviedb'
 
 
-export default function Cast({cast,navigation}) {
-     let personName = 'Keanu Reevs'
-     let characterName = 'John Wick'
+export default function Cast({ cast, navigation }) {
+     // let person?.original_name = 'Keanu Reevs'
+     // let person?.character = 'John Wick'
      // console.log(cast)
      return (
           <View className="my-6">
@@ -20,24 +21,25 @@ export default function Cast({cast,navigation}) {
                                    <TouchableOpacity
                                         key={index}
                                         className="mr-4 items-center"
-                                        onPress={()=> navigation.navigate('Person',person)}
+                                        onPress={() => navigation.navigate('Person', person)}
                                    >
                                         <View
                                              className="overflow-hidden rounded-full h-20 w-20 items-center border border-neutral-500"
                                         >
                                              <Image
-                                             className="rounded-2xl h-24 w-20"
-                                             source={require('../assets/images/OIP.jpg')}
+                                                  className="rounded-2xl h-24 w-20"
+                                                  // source={require('../assets/images/OIP.jpg')}
+                                                  source={{ uri: image185(person?.profile_path) || fallbackPersonImage}}
                                              />
                                         </View>
                                         <Text className="text-white text-xs mt-1">
                                              {
-                                                  characterName.length>10? characterName.slice(0,10)+'...': characterName
+                                                  person?.character.length > 10 ? person?.character.slice(0, 10) + '...' : person?.character
                                              }
                                         </Text>
                                         <Text className="text-neutral-400 text-xs mt-1">
                                              {
-                                                  personName.length>10? personName.slice(0,10)+'...': personName
+                                                  person?.original_name.length > 10 ? person?.original_name.slice(0, 10) + '...' : person?.original_name
                                              }
                                         </Text>
                                    </TouchableOpacity>
