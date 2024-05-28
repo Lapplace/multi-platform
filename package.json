@@ -9,18 +9,30 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@eva-design/eva": "^2.2.0",
+    "@react-native-async-storage/async-storage": "^1.23.1",
+    "@react-navigation/bottom-tabs": "^6.5.20",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
+    "@ui-kitten/components": "^5.3.1",
+    "axios": "^1.6.8",
+    "date-fns": "^3.6.0",
     "expo": "~50.0.14",
+    "expo-av": "~13.10.6",
+    "expo-image-picker": "^15.0.5",
     "expo-linear-gradient": "~12.7.2",
     "expo-status-bar": "~1.11.1",
+    "mysql": "^2.18.1",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-hook-form": "^7.51.2",
     "react-native": "0.73.6",
     "react-native-heroicons": "^4.0.0",
+    "react-native-modern-datepicker": "^1.0.0-beta.91",
     "react-native-progress": "^5.0.1",
-    "react-native-snap-carousel": "^3.9.1"
+    "react-native-snap-carousel": "^3.9.1",
+    "react-native-video": "^2.3.1",
+    "react-native-video-player": "^0.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

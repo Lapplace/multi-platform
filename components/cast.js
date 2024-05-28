@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
-import { fallbackPersonImage, image185 } from '../api/moviedb'
+// import { fallbackPersonImage, image185 } from '../api/moviedb'
 
 
 export default function Cast({ cast, navigation }) {
@@ -10,7 +10,7 @@ export default function Cast({ cast, navigation }) {
      return (
           <View className="my-6">
                <Text className="text-white text-lg mx-4 mb-5">Top Cast</Text>
-               <ScrollView
+               {/* <ScrollView
                     horizontal
                     showsHorizontalScrollIndicator={false}
                     contentContainerStyle={{ paddingHorizontal: 15 }}
@@ -46,7 +46,7 @@ export default function Cast({ cast, navigation }) {
                               )
                          })
                     }
-               </ScrollView>
+               </ScrollView> */}
           </View>
      )
 }
